@@ -1,0 +1,100 @@
+/* 
+    This style sheet stylizes the controls inside our
+    CourseSiteBuilder JavaFX application. Note that controls
+    in the UI must have the same class as those below in 
+    order to be rendered using those properties.
+
+    Author     :Jing Yu
+*/
+
+// CSS CLASS FOR OUR BIG PANES
+.root {
+ -fx-base: rgb(50, 50, 50);
+-fx-background: rgb(50, 50, 50);
+-fx-control-inner-background:  rgb(50, 50, 50);
+-fx-font-size: 10pt;
+      -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+   
+}
+.bordered_pane { 
+   -fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+//    -fx-background-color:snow;
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-width: 2px;
+    -fx-border-color:aquamarine;
+}
+
+
+.screen_pane {
+   -fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+//    -fx-background-color:linear-gradient(papayawhip,seashell);
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-spacing: 10;    
+    -fx-border-width: 2px;
+    -fx-border-color:aquamarine;
+}
+// CSS CLASS FOR LABELS HEADING LARGE SECTIONS IN THE GUI
+.heading_label {
+    -fx-font-size: 22pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: orange;
+   
+}
+
+// CSS CLASS FOR LABELS HEADING SUBSECTIONS IN THE GUI
+.subheading_label {
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: orange;
+   
+}
+
+// CSS CLASS FOR LABELS SERVING AS PROMPTS IN THE GUI
+.prompt_label {
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: orange;
+}
+
+.label {
+  
+    -fx-font-weight: bold; 
+    -fx-text-fill: orange;  
+ 
+ //  -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.button {
+     -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+   .button Text {
+     -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+   }
+   
+   .button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+    }
+    
+    .table-view {
+-fx-table-cell-border-color:derive(-fx-base,+10%);
+-fx-table-header-border-color:derive(-fx-base,+20%);
+}
+.scroll-bar{
+    -fx-background-color:#999999; 
+}
+
